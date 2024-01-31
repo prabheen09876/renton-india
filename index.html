@@ -18,20 +18,22 @@
         <li><a href="#contact">Contact</a></li>
         <li><a href="#footer">About</a></li>
       </ul>
+     
     </div>
+   
     </div>
-    <hr>
+    
     <div id="items">
         <div id="item">
-        <a href="tents.html"><img src="images/tents.jpeg"></a>
+        <a href="tents.html"><img src="images/tents.webp"></a>
         <h2>Tents</h2>
         </div>
         <div id="item">
-        <a href="tablesandchairs.html"><img src="images/tables and chairs.jpg"></a>
+        <a href="tablesandchairs.html"><img src="images/tables and chairs.webp"></a>
         <h2>Tables and Chairs</h2>
         </div>
         <div id="item">
-        <a href="mattress.html"><img src="images/mattress.jpg"></a>
+        <a href="mattress.html"><img src="images/mattress.webp"></a>
         <h2>Mattress</h2>
         </div>
     </div>
@@ -40,15 +42,15 @@
     </div>
     <div id="items">
         <div id="item">
-       <a href="electricityandsound.html"><img src="images/sound.jpg"></a> 
+       <a href="electricityandsound.html"><img src="images/sound.webp"></a> 
         <h2>Electricity and Sound</h2>
         </div>
         <div id="item">
-       <a href="utensils.html"><img src="images/utensils.jpeg"></a> 
+       <a href="utensils.html"><img src="images/utensils.webp"></a> 
         <h2>Utensils & Others</h2>
         </div>
         <div id="item">
-       <a href="catering.html"><img src="images/catering.jpeg"></a> 
+       <a href="catering.html"><img src="images/catering.webp"></a> 
         <h2>Event & Catering</h2>
         </div>
     </div>
@@ -76,5 +78,17 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
+    <script>
+     let nav = document.getElementById("top-bar");
+      let sticky = nav.offsetTop;
+      window.onscroll = function() {sticker()};
+      function sticker() {
+         if (window.pageYOffset >= sticky) {
+            nav.classList.add("sticky")
+         } else {
+            nav.classList.remove("sticky");
+         }
+      }
+    </script>
 </body>
 </html>
